@@ -1,0 +1,34 @@
+@mixin equilateral-triangle($direction, $size, $color) {
+    width: 0;
+    height: 0;
+    @if $direction == 'up' {
+        border-left: em($size) solid transparent;
+        border-right: em($size) solid transparent;
+        border-bottom: em($size) solid $color;
+    }
+    @else if $direction == 'down' {
+        border-left: em($size) solid transparent;
+        border-right: em($size) solid transparent;
+        border-top: em($size) solid $color;
+    }
+    @else if $direction == 'right' {
+        border-top: em($size) solid transparent;
+        border-bottom: em($size) solid transparent;
+        border-left: em($size) solid $color;
+    }
+    @else if $direction == 'left' {
+        border-top: em($size) solid transparent;
+        border-bottom: em($size) solid transparent;
+        border-right: em($size) solid $color;
+    }
+}
+
+
+
+background-color: white;
+width: 100px; 
+height: 100px; 
+border-left: 500px solid transparent black;
+border-right: 500px solid transparent black;
+
+border-bottom: 500px solid transparent black;
