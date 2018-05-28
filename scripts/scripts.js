@@ -1,15 +1,19 @@
-console.log('hello Sasha');
-console.log('I want you to say hi to me');
-console.log(document)
-console.log(window.outerWidth)
+// console.log('hello Sasha');
+// console.log('I want you to say hi to me');
+// console.log(document)
+// console.log(window.outerWidth)
 
 if (500 > window.outerWidth) {
     // return(window.outerWidth)
-    console.log('This is mobile');
+    // console.log('This is mobile');
 // find the box
   var boxElement = document.querySelector(".box")
-  console.log(boxElement)
   boxElement.style.width = "80vw"
+  boxElement.style.fontSize = "2em"
+
+  var mainImgElement = document.querySelector(".box-img")
+  mainImgElement.style.width = "55vw"
+  mainImgElement.style.height = "55vw"
 // Set boxes width
 } 
 
